@@ -1,6 +1,6 @@
 package pokerEnums;
 
-/*
+
 
 public class eHandStrength {
 	FiveOfAKind(110,"isHandFiveofAKind"){

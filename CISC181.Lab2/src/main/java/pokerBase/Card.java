@@ -5,12 +5,12 @@ import pokerEnums.eSuit;
 
 public class Card {
 
-	private eRank cRank;
-	private eSuit cSuit;
+	private eRank Rank;
+	private eSuit Suit;
 
-	public Card(eSuit cSuite, eRank cRank) {
-		this.cRank = cRank;
-		this.cSuit = cSuit;
+	public Card(eSuit Suit, eRank Rank) {
+		this.Rank = Rank;
+		this.Suit = Suit;
 	}
 
 }
