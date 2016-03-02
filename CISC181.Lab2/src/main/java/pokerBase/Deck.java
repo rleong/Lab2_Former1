@@ -32,6 +32,14 @@ public class Deck {
 		
 	}
 	
+	//For testing and debugging purposes only!
+	public void debuggingDeck(){
+		for (int i = 0; i < deckCards.size(); i++){
+			Card value = deckCards.get(i);
+			System.out.println(value);
+		}
+	}
+	
 	public Card DrawCard(){
 		return deckCards.remove(0);
 	}

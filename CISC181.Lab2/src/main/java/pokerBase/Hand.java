@@ -24,7 +24,7 @@ public class Hand {
 	private boolean Ace;
 
 	public Hand() {
-
+		
 	}
 	
 
