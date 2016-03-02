@@ -12,5 +12,17 @@ public class Card {
 		this.Rank = Rank;
 		this.Suit = Suit;
 	}
-
+	
+	public eRank getRank(){
+		return Rank;
+	}
+	
+	public eSuit getSuit(){
+		return Suit;
+	}
+	@Override
+	public String toString() {
+		return String.valueOf(Rank) + " OF " + String.valueOf(Suit);
+	}
+	
 }

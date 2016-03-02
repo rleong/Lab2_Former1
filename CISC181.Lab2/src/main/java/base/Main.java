@@ -12,7 +12,7 @@ public class Main {
 		for (int i = 0; i < haha.cards.size(); i++){
 			Card value = haha.cards.get(i);
 			System.out.println(value);
-			System.out.println(i);
+			//System.out.println(i);
 		}
 		//System.out.println(haha);
 	}

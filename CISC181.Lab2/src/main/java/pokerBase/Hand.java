@@ -26,7 +26,7 @@ public class Hand {
 
 	}
 
-	public ArrayList<Card> getCardsInHand() {
+	/*public ArrayList<Card> getCardsInHand() {
 		return CardsInHand;
 	}
 
@@ -85,7 +85,7 @@ public class Hand {
 	public Hand AddCardToHand(Card c) {
 		CardsInHand.add(c);
 		return this;
-	}
+	}*/
 
 	/**
 	 * EvaluateHand is a static method that will score
