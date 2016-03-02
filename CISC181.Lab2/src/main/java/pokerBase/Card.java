@@ -10,7 +10,7 @@ public class Card implements Comparable{
 	private eSuit eSuit;
 	private int iCardNbr;
 
-	public Card(eSuit eSuit, eRank eRank, int iCardNbr) {
+	public Card(pokerEnums.eRank eRank, pokerEnums.eSuit eSuit, int iCardNbr) {
 		super();
 		this.eRank = eRank;
 		this.eSuit = eSuit;
@@ -54,12 +54,12 @@ public class Card implements Comparable{
 	@Override
 	public int compareTo(Object o){
 		Card c = (Card) o;
-		return c.getRank().compareTo(this.Rank);
+		return c.geteRank().compareTo(this.eRank);
 	}
 	
 	@Override
 	public String toString() {
-		return String.valueOf(Rank) + " OF " + String.valueOf(Suit);
+		return String.valueOf(eRank) + " OF " + String.valueOf(eSuit);
 	}
 	
 }

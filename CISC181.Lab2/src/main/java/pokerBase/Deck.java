@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Deck {
 
-	public ArrayList<Card> cards;
+	private ArrayList<Card> deckCards = new ArrayList<Card>();
 	
 	public Deck() {
 		
@@ -22,23 +22,23 @@ public class Deck {
 			
 			for (short j = 0; j <= 12; j++){
 				eRank RankValue = eRank.values()[j];
-				Card NewCard = new Card(SuitValue, RankValue);
+				Card NewCard = new Card(RankValue, SuitValue, (13*i)+j+1);
 				MakingDeck.add(NewCard);
 			} 
 		}
 		// Set the instance variable
-		cards = MakingDeck;
+		deckCards = MakingDeck;
 		ShuffleCards();
 		
 	}
 	
-	/*public Deck(int iJokers){
-		this();
-	}*/
+	public Card DrawCard(){
+		return deckCards.remove(0);
+	}
 	
 	private void ShuffleCards(){
 		// Shuffle the cards
-		Collections.shuffle(cards);
+		Collections.shuffle(deckCards);
 	}
 	
 }

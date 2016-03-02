@@ -15,15 +15,15 @@ public enum eRank {
 	QUEEN(12), 
 	KING(13),
 	ACE(14);
+	
+	private int iRankNbr;
 
-	private eRank(final int rank) {
-		this.rank = rank;
+	private eRank(int iRankNbr) {
+		this.iRankNbr = iRankNbr;
 	}
 
-	private int rank;
-
-	public int getRank() {
-		return rank;
+	public int getiRankNbr() {
+		return iRankNbr;
 	}
 
 }
