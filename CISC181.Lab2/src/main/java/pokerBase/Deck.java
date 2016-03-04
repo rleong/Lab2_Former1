@@ -44,6 +44,20 @@ public class Deck {
 		return deckCards.remove(0);
 	}
 	
+	/**
+	 * Draws a card from the instance of Deck
+	 * @return
+	 * @throws DeckException
+	 */
+//	public Card Draw() throws DeckException
+//	{
+//		if (deckCards.size() == 0)
+//		{
+//			throw new DeckException(this);
+//		}
+//		return deckCards.remove(0);
+//	}
+	
 	private void ShuffleCards(){
 		// Shuffle the cards
 		Collections.shuffle(deckCards);
